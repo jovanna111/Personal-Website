@@ -1,0 +1,158 @@
+.Pg3 {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Body";
+}
+.Body{ background-image: url("https://lh3.googleusercontent.com/uwd7R1Of2x9GfrEl3ndEIGnEMOvwrZGaS_Y305sj8cs5_h2pIObM6MATrC4N0-v9BetF2vB5v6fBiT7ex-sogYIVNI3o9tFyAdR_7RiotLY7E01bJtI6xZVEqP2zTL-HKsvFwFd63Q=w2400");
+background-repeat: no-repeat;
+/* width: 1500px; */
+background-size: cover;
+width: 1903px;
+}
+
+.Body {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 2.1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header"
+    "WIP"
+    "footer";
+  grid-area: Body;
+}
+
+.Header {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: Header;
+  width: 1903px;
+ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,233,1) 84%);
+}
+
+.Logo { grid-area: 1 / 1 / 2 / 3; }
+
+.Logo #logo {
+  height:270px;
+  wdith: 700px;
+padding top:1000px; }
+
+
+.Nav { grid-area: 1 / 2 / 2 / 3; }
+ul {
+  margin: 0;
+  padding-top: 100px;
+  text-align: center;
+  z-index: 10;
+}
+
+li {
+  color: white;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+li:hover,
+li.active {
+  color: pink;
+  transform: scale(1.1);
+}
+
+.WIP {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: WIP;
+}
+
+.PP1 { grid-area: 1 / 1 / 2 / 3;
+height: 800px;
+width:600px;}
+.PP1 img {
+height:700px;
+width:500px;
+padding-top: 50px;
+padding-left: 100px;
+}
+
+.Title{  grid-area: 1 / 2 / 2 / 3; 
+/* border: 5px solid red; */
+height: 100px;
+width: 200px;
+align: center;
+text-align: center;
+margin-left: 300px;
+padding-top: 300px;
+font-size: 35px;
+color: #FFABF0;
+
+ 
+}
+.PP2 {
+width: 800px;
+height:800px;}
+.PP2 img{ 
+height:700px;
+width:500px;
+padding-top: 50px;
+padding-left:130px;
+margin-right:-100px;
+}
+
+.footer { grid-area: footer;
+ width: 1903px;
+text-align:center;
+color:white;
+ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,233,1) 84%);
+}
+
+
+html, body , .Pg3 {
+  height: 100%;
+  margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.Pg3 * {
+/*   border: 1px solid red; */
+  position: relative;
+}
+
+.Pg3 *:after {
+/*   content:attr(class); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.glow{
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }

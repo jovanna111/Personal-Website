@@ -1,0 +1,168 @@
+.Pg2 {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Body";
+}
+
+.Body{ background-image: url("https://lh3.googleusercontent.com/uwd7R1Of2x9GfrEl3ndEIGnEMOvwrZGaS_Y305sj8cs5_h2pIObM6MATrC4N0-v9BetF2vB5v6fBiT7ex-sogYIVNI3o9tFyAdR_7RiotLY7E01bJtI6xZVEqP2zTL-HKsvFwFd63Q=w2400");
+background-repeat: no-repeat;
+/* width: 1500px; */
+background-size: cover;
+width: 1893px;
+}
+.Body {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.7fr 2fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header"
+    "Bio"
+    "Gallery"
+    "Footer";
+  grid-area: Body;
+}
+
+.Header {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Logo Nav";
+  grid-area: Header;
+  height: 200px;
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,233,1) 84%);
+}
+
+.Logo { grid-area: Logo; 
+/*   border: solid blue; */
+ height:170px;
+ width: 175px;
+}
+.Logo #logo {
+  height:270px;
+  wdith: 700px;
+padding top:1000px; }
+
+.Nav { grid-area: Nav; 
+padding-top: 100px;}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+li {
+  color: white;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+li:hover,
+li.active {
+  color: pink;
+  transform: scale(1.1);
+}
+
+
+.Bio { grid-area: Bio; 
+height:350px;
+width: 800px;
+padding top: -200px;
+/* border: 5px solid blue; */
+ padding-top: 2px;
+    margin-top: -115px;
+    margin-left: 520px;
+}
+
+.Bio P { font-size:27px;
+  text-align: center;
+color: #FFE3F5;
+
+}
+
+
+.Gallery {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "GP1 GP2 GP3";
+  grid-area: Gallery;
+  width: 500px;
+  margin-top: 100px;
+}
+
+.GP1 { grid-area: GP1;
+margin-left: 150px;
+height: 615px;
+}
+.GP1 img {height:600px;
+width: 475px;}
+
+.GP2 { grid-area: GP2; }
+.GP2 img {height: 600px;
+width: 475px;
+margin-left: 100px;}
+
+.GP3 { grid-area: GP3; }
+.GP3 img {height: 600px;
+width: 475px;
+margin-left: 100px;
+}
+.Footer { grid-area: Footer;
+text-align:center;
+color:white;
+width: 1893px;
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,233,1) 84%);}
+
+
+html, body , .Pg2 {
+  height: 100%;
+  margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.Pg2 * {
+/*   border: 1px solid red; */
+  position: relative;
+}
+
+.Pg2 *:after {
+/*   content:attr(class); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.glow{
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
